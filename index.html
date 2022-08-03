@@ -44,6 +44,16 @@
             <li class="nav-item">
               <a class="nav-link" href="./Tampil/index.html">Data Barang</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Masuk/index.html"
+                >Data Barang Masuk</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Keluar/index.html"
+                >Data Barang Keluar</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -70,56 +80,6 @@
                     aria-label="Close"
                   ></button>
                 </div>
-
-                <div class="mb-3">
-                  <label for="bulan" class="form-label"
-                    >Bulan dan Tahun Penginputan</label
-                  >
-                  <div class="container px-0">
-                    <div class="row gx-2">
-                      <div class="col">
-                        <select
-                          class="form-select form-select-sm"
-                          aria-label=".form-select-sm example"
-                          name="bulan"
-                        >
-                          <option selected>Silahkan Pilih Bulan</option>
-                          <option value="Januari">Januari</option>
-                          <option value="Februari">Februari</option>
-                          <option value="Maret">Maret</option>
-                          <option value="April">April</option>
-                          <option value="Mei">Mei</option>
-                          <option value="Juni">Juni</option>
-                          <option value="Juli">Juli</option>
-                          <option value="Agustus">Agustus</option>
-                          <option value="September">September</option>
-                          <option value="Oktober">Oktober</option>
-                          <option value="November">November</option>
-                          <option value="Desember">Desember</option>
-                        </select>
-                      </div>
-                      <div class="col">
-                        <select
-                          class="form-select form-select-sm"
-                          aria-label=".form-select-sm example"
-                          name="tahun"
-                        >
-                          <option selected>Silahkan Pilih Tahun</option>
-                          <option value="2022">2022</option>
-                          <option value="2023">2023</option>
-                          <option value="2024">2024</option>
-                          <option value="2025">2025</option>
-                          <option value="2026">2026</option>
-                          <option value="2027">2027</option>
-                          <option value="2028">2028</option>
-                          <option value="2029">2029</option>
-                          <option value="2030">2030</option>
-                          <option value="2031">2031</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="mb-3">
                   <label for="jenis" class="form-label">Jenis Inputan</label>
                   <select
@@ -144,19 +104,334 @@
                     >
                       Barang Keluar
                     </option>
+                    <option
+                      value="Awal"
+                      id="jenis"
+                      name="jenis"
+                      aria-describedby="jenis"
+                    >
+                      Awal
+                    </option>
                   </select>
                 </div>
                 <div class="mb-3">
                   <label for="tanggalinput" class="form-label"
-                    >Tanggal Barang Keluar</label
+                    >Tanggal Barang Keluar/Masuk</label
                   >
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="tanggalinput"
-                    aria-describedby="tanggalinput"
-                    name="tanggalinput"
-                  />
+                  <div class="container px-4">
+                    <div class="row gx-2">
+                      <div class="col">
+                        <select
+                          name="tanggalinput"
+                          id="tanggalinput"
+                          class="form-select form-select-sm"
+                        >
+                          <option selected>---Tanggal---</option>
+                          <option
+                            value="1"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            1
+                          </option>
+                          <option
+                            value="2"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            2
+                          </option>
+                          <option
+                            value="3"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            3
+                          </option>
+                          <option
+                            value="4"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            4
+                          </option>
+                          <option
+                            value="5"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            5
+                          </option>
+                          <option
+                            value="6"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            6
+                          </option>
+                          <option
+                            value="7"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            7
+                          </option>
+                          <option
+                            value="8"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            8
+                          </option>
+                          <option
+                            value="9"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            9
+                          </option>
+                          <option
+                            value="10"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            10
+                          </option>
+                          <option
+                            value="11"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            11
+                          </option>
+                          <option
+                            value="12"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            12
+                          </option>
+                          <option
+                            value="13"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            13
+                          </option>
+                          <option
+                            value="14"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            14
+                          </option>
+                          <option
+                            value="15"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            15
+                          </option>
+                          <option
+                            value="16"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            16
+                          </option>
+                          <option
+                            value="17"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            17
+                          </option>
+                          <option
+                            value="18"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            18
+                          </option>
+                          <option
+                            value="19"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            19
+                          </option>
+                          <option
+                            value="20"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            20
+                          </option>
+                          <option
+                            value="21"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            21
+                          </option>
+                          <option
+                            value="22"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            22
+                          </option>
+                          <option
+                            value="23"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            23
+                          </option>
+                          <option
+                            value="24"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            24
+                          </option>
+                          <option
+                            value="25"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            25
+                          </option>
+                          <option
+                            value="26"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            26
+                          </option>
+                          <option
+                            value="27"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            27
+                          </option>
+                          <option
+                            value="28"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            28
+                          </option>
+                          <option
+                            value="29"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            29
+                          </option>
+                          <option
+                            value="30"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            30
+                          </option>
+                          <option
+                            value="31"
+                            id="tanggalinput"
+                            name="tanggalinput"
+                          >
+                            31
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select
+                          name="bulan"
+                          id="bulan"
+                          class="form-select form-select-sm"
+                        >
+                          <option selected>---Bulan---</option>
+                          <option value="Januari" id="bulan" name="bulan">
+                            Januari
+                          </option>
+                          <option value="Februari" id="bulan" name="bulan">
+                            Februari
+                          </option>
+                          <option value="Maret" id="bulan" name="bulan">
+                            Maret
+                          </option>
+                          <option value="April" id="bulan" name="bulan">
+                            April
+                          </option>
+                          <option value="Mei" id="bulan" name="bulan">
+                            Mei
+                          </option>
+                          <option value="Juni" id="bulan" name="bulan">
+                            Juni
+                          </option>
+                          <option value="Juli" id="bulan" name="bulan">
+                            Juli
+                          </option>
+                          <option value="Agustus" id="bulan" name="bulan">
+                            Agustus
+                          </option>
+                          <option value="September" id="bulan" name="bulan">
+                            September
+                          </option>
+                          <option value="Oktober" id="bulan" name="bulan">
+                            Oktober
+                          </option>
+                          <option value="November" id="bulan" name="bulan">
+                            November
+                          </option>
+                          <option value="Desember" id="bulan" name="bulan">
+                            Desember
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <select
+                          name="tahun"
+                          id="tahun"
+                          class="form-select form-select-sm"
+                        >
+                          <option selected>---Tahun---</option>
+                          <option value="2022" id="tahun" name="tahun">
+                            2022
+                          </option>
+                          <option value="2023" id="tahun" name="tahun">
+                            2023
+                          </option>
+                          <option value="2024" id="tahun" name="tahun">
+                            2024
+                          </option>
+                          <option value="2025" id="tahun" name="tahun">
+                            2025
+                          </option>
+                          <option value="2026" id="tahun" name="tahun">
+                            2026
+                          </option>
+                          <option value="2027" id="tahun" name="tahun">
+                            2027
+                          </option>
+                          <option value="2028" id="tahun" name="tahun">
+                            2028
+                          </option>
+                          <option value="2029" id="tahun" name="tahun">
+                            2029
+                          </option>
+                          <option value="2030" id="tahun" name="tahun">
+                            2030
+                          </option>
+                          <option value="2031" id="tahun" name="tahun">
+                            2031
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="mb-3">
                   <label for="Nama" class="form-label">Nama Barang</label>
